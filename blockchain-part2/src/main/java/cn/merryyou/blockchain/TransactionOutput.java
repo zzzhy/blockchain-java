@@ -30,4 +30,13 @@ public class TransactionOutput {
     public boolean isMine(PublicKey publicKey) {
         return (publicKey == reciepient);
     }
+
+    @Override
+    public String toString() {
+        return "TransactionOutput{" +
+                "id='" + id + '\'' +
+                ", value=" + value +
+                ", parentTransactionId='" + parentTransactionId + '\'' +
+                '}';
+    }
 }

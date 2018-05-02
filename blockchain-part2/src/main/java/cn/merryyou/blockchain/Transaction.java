@@ -108,4 +108,14 @@ public class Transaction {
                         Float.toString(value) + sequence
         );
     }
+
+    @Override
+    public String toString() {
+        return "Transaction{" +
+                "transactionId='" + transactionId + '\'' +
+                ", value=" + value +
+                ", inputs=" + inputs +
+                ", outputs=" + outputs +
+                '}';
+    }
 }

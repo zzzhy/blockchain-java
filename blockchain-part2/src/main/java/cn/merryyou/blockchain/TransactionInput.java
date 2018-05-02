@@ -14,4 +14,12 @@ public class TransactionInput {
     public TransactionInput(String transactionOutputId) {
         this.transactionOutputId = transactionOutputId;
     }
+
+    @Override
+    public String toString() {
+        return "TransactionInput{" +
+                "transactionOutputId='" + transactionOutputId + '\'' +
+                ", UTXO=" + UTXO +
+                '}';
+    }
 }
